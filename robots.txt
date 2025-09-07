@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: 
+Sitemap: https://github.com/enockwest/Dproprinterandstationery/blob/main/set%20(1).jpg

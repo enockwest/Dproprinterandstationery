@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dpro Printers & Stationary - Services</title>
+<link rel="stylesheet" href="services.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+  
+  body{
+    background: url('https://source.unsplash.com/1600x900/?printing,stationery') no-repeat center center fixed;
+    background-size: cover;
+    color:#333;
+  }
+
+  /* ===== HEADER ===== */
+  header{
+    position:fixed;top:0;width:100%;z-index:1000;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:15px 20px;background:rgba(255,255,255,0.3);
+    backdrop-filter:blur(10px);box-shadow:0 4px 20px rgba(0,0,0,0.1);
+  }
+  header h1{font-size:1.8rem;color:#00bfff;font-family:'Roboto',sans-serif;}
+  .menu-btn{display:block;font-size:1.8rem;cursor:pointer;color:#00bfff;}
+  nav{
+    position:fixed;top:65px;right:20px;background:rgba(255,255,255,0.3);
+    backdrop-filter:blur(15px);border-radius:15px;display:none;flex-direction:column;padding:15px;
+  }
+  nav a{margin:10px;color:#00bfff;text-decoration:none;font-weight:600;transition:0.3s;font-family:'Roboto',sans-serif;}
+  nav a:hover{color:#ffffff;background:#00bfff;padding:8px;border-radius:10px;}
+  @media(min-width:768px){
+    .menu-btn{display:none;}
+    nav{position:static;display:flex !important;flex-direction:row;background:transparent;padding:0;}
+    nav a{margin:0 20px;}
+  }
+
+  /* ===== SERVICES GALLERY ===== */
+  section{padding:100px 20px;text-align:center;background:rgba(255,255,255,0.1);}
+  h2{font-size:2.2rem;color:#00bfff;margin-bottom:40px;font-family:'Roboto',sans-serif;}
+
+  .gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    perspective:1200px;
+  }
+
+  .gallery-item{
+    width:100%;
+    max-width:280px;
+    height:auto;
+    background:rgba(255,255,255,0.3);
+    backdrop-filter:blur(15px);
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:transform 0.5s;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    overflow:hidden;
+  }
+
+  .gallery-item img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:12px;
+  }
+
+  .gallery-item p{
+    margin-top:10px;
+    color:#00bfff;
+    font-weight:700;
+    font-size:1.1rem;
+    text-align:center;
+    font-family:'Roboto',sans-serif;
+  }
+
+  .gallery-item:hover{transform:scale(1.05) rotateY(10deg);}
+
+  @media(min-width:768px){
+    .gallery-item{flex:1 1 calc(33% - 40px);}
+    .gallery-item img{height:180px;}
+  }
+  
+  @media(min-width:1200px){
+    .gallery-item{flex:1 1 calc(25% - 40px);}
+  }
+
+  /* ===== FOOTER ===== */
+  footer{
+    background:rgba(0,191,255,0.15);
+    color:#00bfff;text-align:center;padding:40px;
+    backdrop-filter:blur(15px);box-shadow:0 -5px 20px rgba(0,0,0,0.2);
+  }
+  footer a{color:#00bfff;margin:0 8px;text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Dpro Printers</h1>
+  <span class="menu-btn" id="menuBtn">&#9776;</span>
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="#order">Order Service</a>
+  </nav>
+</header>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="gallery">
+    <div class="gallery-item"><img src="49174faaf4f472ab21ba1cef87955880.jpg" alt=""><p>Business Cards</p></div>
+    <div class="gallery-item"><img src="moonlight_0.jpg" alt=""><p>Posters</p></div>
+    <div class="gallery-item"><img src="images (1).jpeg" alt=""><p>Leaflets</p></div>
+    <div class="gallery-item"><img src="7c970d4dcdbae14059d851b4aacc1641.jpg" alt=""><p>Receipt Books</p></div>
+    <div class="gallery-item"><img src="5d988a990ba7f19163b12a6f5dd8b338.jpg" alt=""><p>Wedding Cards</p></div>
+    <div class="gallery-item"><img src="images.jpeg" alt=""><p>Brochures</p></div>
+    <div class="gallery-item"><img src="images (2).jpeg" alt=""><p>Invoice Books</p></div>
+    <div class="gallery-item"><img src="cf44b694bcbc6132bd5b2d3f913b629d.jpg" alt=""><p>Certificates</p></div>
+    <div class="gallery-item"><img src="images (4).jpeg" alt=""><p>Banners</p></div>
+    <div class="gallery-item"><img src="b42ce00b2f1396d8d21d6aebd1ebae82.jpg" alt=""><p>Calendars</p></div>
+    <div class="gallery-item"><img src="a0de537f347763149338e2b9a4a1962d.jpg" alt=""><p>Express Passport Photos</p></div>
+    <div class="gallery-item"><img src="479ba47f58f41edd0b28784bf13caf71.jpg" alt=""><p>Menus for Hotels/Restaurants</p></div>
+    <div class="gallery-item"><img src="0bce88f6d857975d2ccc3039be71865a.jpg" alt=""><p>Branding (Cups, T-shirts, Hats, Gifts)</p></div>
+    <div class="gallery-item"><img src="947803a5a2906a77670d7297f4a58605.jpg" alt=""><p>Magazines</p></div>
+    <div class="gallery-item"><img src="photocopy.jpg" alt=""><p>Photocopy</p></div>
+    <div class="gallery-item"><img src="images (3).jpeg" alt="images (2).jpeg"><p>Printing</p></div>
+    <div class="gallery-item"><img src="5655ee3fbde4d855c86c73a307e7c47d.jpg" alt=""><p>Plastic IDs</p></div>
+  </div>
+</section>
+  <section id="order">
+  <h2>Place Your Order</h2>
+  <form id="orderForm" class="order-form">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your full name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+    </div>
+
+    <div class="form-group">
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Choose a Service --</option>
+        <option value="Business Cards">Business Cards</option>
+        <option value="Posters">Posters</option>
+        <option value="Leaflets">Leaflets</option>
+        <option value="Receipt Books">Receipt Books</option>
+        <option value="Wedding Cards">Wedding Cards</option>
+        <option value="Brochures">Brochures</option>
+        <option value="Invoice Books">Invoice Books</option>
+        <option value="Certificates">Certificates</option>
+        <option value="Banners">Banners</option>
+        <option value="Calendars">Calendars</option>
+        <option value="Express Passport Photos">Express Passport Photos</option>
+        <option value="Menus">Menus</option>
+        <option value="Branding">Branding</option>
+        <option value="Magazines">Magazines</option>
+        <option value="Photocopy">Photocopy</option>
+        <option value="Printing">Printing</option>
+        <option value="Plastic IDs">Plastic IDs</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="custom">Custom Service</label>
+      <input type="text" id="custom" name="custom" placeholder="Describe custom service">
+    </div>
+
+    <div class="form-group">
+      <label for="payment">Payment Method</label>
+      <select id="payment" name="payment" required>
+        <option value="">-- Choose Payment Method --</option>
+        <option value="cash">Cash on Delivery</option>
+        <option value="mobile">Mobile Pay</option>
+      </select>
+      <p>For more Information checkout on Our WhatsApp at your bottom right</p>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Order</button>
+  </form>
+</section>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/256700531200" class="whatsapp-float" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+</a>
+
+
+<script>
+  document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const payment = document.getElementById('payment').value;
+
+    if (payment === "cash") {
+      alert("Please be ready to pay fully in cash on delivery.");
+    } else if (payment === "mobile") {
+      alert("Please pay via Mobile Money to: 0700531200.");
+    } else {
+      alert("Please select a payment method.");
+    }
+  });
+</script>
+
+
+
+
+<footer>
+  <p><strong>Working Hours:</strong> Mon-Fri: 8:00 - 18:00 | Sat: 9:00 - 15:00</p>
+  <p>Follow us: 
+    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+  </p>
+  <p>&copy; 2025 Dpro Printers & Stationary</p>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navMenu = document.getElementById('navMenu');
+  menuBtn.addEventListener('click', () => {
+    navMenu.style.display = navMenu.style.display==='flex'?'none':'flex';
+  });
+</script>
+</body>
+</html>

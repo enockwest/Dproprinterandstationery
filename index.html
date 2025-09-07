@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/bootstrap.min.css"><meta name="robots" content="index, follow">
+<!-- Bootstrap CSS CDN --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome CDN --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<!-- Google Fonts (Example) --><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dpro Printers & Stationary Nansana</title>
+
+</head>
+<body>
+
+<header class="container-fluid name"><h1>Dpro Printers</h1><span class="menu-btn" id="menuBtn">&#9776;</span><nav id="navMenu" class="">  <a href="#home">Home</a>  <a href="#about">About</a>  <a href="#services">Services</a>  <a href="#products">Products</a>  <a href="#location">Location</a>   <!--<a href="#messagePopup" id="openMessage" class="message-link">💬 Leave a Message</a>--></nav>
+</header>
+<main class="">
+<!-- HOME CAROUSEL -->
+<section id="home" class="carousel" style="background-image: linear-gradient(rgba(77, 72, 72, 0.7), black), url('a62bf63bd827021b6d3e90875b9ac5eb.jpg');"><div class="carousel-slide active" style="background-image:url('images (7).jpeg');">  <h2 class="">Quality Stationery for Professionals</h2>  <button>Shop Now</button></div><div class="carousel-slide" style="background-image:url('b42ce00b2f1396d8d21d6aebd1ebae82.jpg');">  <h2>Notebooks, Pens, & Office Supplies</h2>  <button onclick="myproducts()">Browse Products</button></div><div class="carousel-slide" style="background-image:url('d2088de76cacb9c921fa86d719b9e998 (2).jpg');">  <h2>Printing Services at Your Fingertips</h2>  <button>Join Us</button></div>
+<!-- WhatsApp Button -->
+
+ 
+
+</section>
+
+<!-- ABOUT -->
+<section id="about"><h2 class="bg-success p-3 rounded">About Us</h2><div class="container-fluid row text-white bg-dark p-5"><p class="col-lg-6 lead mt-5" style="text-align: center;"> Dpro Printers & Stationary provides top quality office supplies and printing services with fast delivery and excellent customer support.</p><p class="col-lg-6">  <img src="833f84ad78b93c28c88b79fc84df5bcc.jpg" alt="about-image" class="img-fluid img-rounded" width="400px"></p></div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="container-fluid"><h2 class="bg-success p-3 rounded">Our Services</h2><p>Printing | Custom Stationery | Office Supplies | School Supplies | Delivery Service</p> <div>  <a href="services.html" class="btn btn-primary btn-lg" style="margin-top: 20px; text-decoration: dotted;">See More</a></div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products"><h2 class="bg-success p-3 rounded">Our Products</h2><div class="product-carousel bg-dark p-2" id="productCarousel">  <div class="product" style="--i:0"><img src="2c59bfc9981049e4245d6a3db50155a8.jpg" alt=""><p>Notebook - </p></div>  <div class="product" style="--i:1"><img src="d2088de76cacb9c921fa86d719b9e998 (3).jpg" alt=""><p>Pen Set -</p></div>  <div class="product" style="--i:2"><img src="6fd70cf3a2a6a2c8a4070033960dc61a.jpg" alt=""><p>Printer - </p></div>  <div class="product" style="--i:3"><img src="26e39701b7d288c24c21afa603666a98.jpg" alt=""><p>Stapler -</p></div>  <div class="product" style="--i:4"><img src="fdf6c57ae751f2b5b445fdcc93716e4f.jpg" alt=""><p>Markers - </p></div></div><div>  <a href="products.html" class="btn btn-primary btn-lg" style="margin-top: 20px; text-decoration: dotted;">See More</a></div>
+</section>
+<main class="container py-5">  <h2 class="mb-4 text-center">Meet our Team</h2>
+  <div class="slider">    <div class="slider-track">      <!-- Duplicate staff cards for infinite loop -->      <div class="team-card">        <img class="avatar" src="DAN.jpg" alt="John Doe">        <div class="name">Daniel. K .</div>        <div class="role">Lead Developer</div>        <p class="mb-3 small">A Great Member of <em>Dpro Printers</em></p>        <div class="d-flex flex-wrap gap-2 justify-content-center">          <a class="btn btn-outline-primary btn-sm btn-contact" href="mailto:john.doe@example.com">Email</a>          <a class="btn btn-success btn-sm btn-contact" href="https://wa.me/256745590960" target="_blank">WhatsApp</a>          <a class="btn btn-outline-dark btn-sm btn-contact" href="tel:+256745590960">Call</a>        </div>      </div>
+      <div class="team-card">        <img class="avatar" src="" alt="Jane Smith">        <div class="name lead">Ndawula David</div>        <div class="role">Founder Member</div>        <p class="mb-3 small">Manager of <em>Dpro Printers</em>.</p>        <div class="d-flex flex-wrap gap-2 justify-content-center">          <a class="btn btn-outline-primary btn-sm btn-contact" href="mailto:jane.smith@example.com">Email</a>          <a class="btn btn-success btn-sm btn-contact" href="https://wa.me/256704723351" target="_blank">WhatsApp</a>          <a class="btn btn-outline-dark btn-sm btn-contact" href="tel:+256704723351">Call</a>        </div>      </div>
+      <!-- Duplicate for seamless looping -->       <!--      <div class="team-card">        <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop" alt="John Doe">        <div class="name">John Doe</div>        <div class="role">Lead Developer</div>        <p class="mb-3 small">John builds scalable front-end experiences. Reach out to discuss projects, contracts or onboarding.</p>
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <a class="btn btn-outline-primary btn-sm btn-contact" href="mailto:john.doe@example.com">Email</a>
+            <a class="btn btn-success btn-sm btn-contact" href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+            <a class="btn btn-outline-dark btn-sm btn-contact" href="tel:+1234567890">Call</a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img class="avatar" src="https://images.unsplash.com/photo-1545996124-1bdbd1b3b0c0?q=80&w=600&auto=format&fit=crop" alt="Jane Smith">
+          <div class="name">Jane Smith</div>
+          <div class="role">Product Designer</div>
+          <p class="mb-3 small">Jane designs delightful interfaces and user flows. Contact her for UI/UX work or collaboration.</p>
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <a class="btn btn-outline-primary btn-sm btn-contact" href="mailto:jane.smith@example.com">Email</a>
+            <a class="btn btn-success btn-sm btn-contact" href="https://wa.me/256704723351" target="_blank">WhatsApp</a>
+            <a class="btn btn-outline-dark btn-sm btn-contact" href="tel:+256704723351">Call</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+
+    
+  </main>
+
+<!-- BOOKING -->
+ <!-- Popup Booking Form -->
+ <div id="messagePopup" class="message-popup">
+    <div class="message-content">
+      <span id="closeMessage" class="close-btn">&times;</span>
+      <h2>Leave a Message</h2>
+      <form class="message-form">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="John Deo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+256 700 000000">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="e.g. Inquiry about services" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- LOCATION -->
+<section id="location">
+  <h2>Location</h2>
+  <iframe src="https://maps.google.com/maps?q=London%20Stationery&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen></iframe>
+  <div>
+    <p class="lead">Nansana opposite Cheapest SuperMarket</p>
+  </div>
+</section>
+ <!-- Weekend Offer Section -->
+<section class="offer-section py-5 text-center text-light">
+  <div class="container">
+    <h2 class="display-5 fw-bold mb-3" style="font-family:'Poppins',sans-serif;">
+    <p class="name" style="font-size: xxx-large;">  🚀 Saturday & Sunday Website Offer</p>
+    </h2>
+    <p class="lead mb-4" style="font-family:'Roboto',sans-serif;">
+      Special weekend discounts on all website packages.  
+      Build your dream website today — affordable, fast, and professional!
+    </p>
+    <a href="pricing.html" class="btn btn-lg btn-light fw-semibold me-2">
+      View Pricing
+    </a>
+    <a href="contact.html" class="btn btn-lg btn-outline-light fw-semibold">
+      Get Started
+    </a>
+  </div>
+</section>
+
+</main>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/256700531200" class="whatsapp-float" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+</a>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>Working Hours:</strong> Mon-Fri: 8:00 - 18:00 | Sat: 9:00 - 15:00</p>
+  <p>Follow us:
+    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+  </p>
+  <p>&copy; 2025 Dpro Printers & Stationary</p>
+</footer>
+
+  <script src="script.js"></scripts>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/bootstrap.bundle.js"></script></body>
+</html>

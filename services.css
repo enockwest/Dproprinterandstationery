@@ -1,0 +1,194 @@
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+  
+  body{
+    background: url('https://source.unsplash.com/1600x900/?printing,stationery') no-repeat center center fixed;
+    background-size: cover;
+    color:#333;
+  }
+
+  /* ===== HEADER ===== */
+  header{
+    position:fixed;top:0;width:100%;z-index:1000;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:15px 20px;background:rgba(255,255,255,0.3);
+    backdrop-filter:blur(10px);box-shadow:0 4px 20px rgba(0,0,0,0.1);
+  }
+  header h1{font-size:1.8rem;color:#00bfff;font-family:'Roboto',sans-serif;}
+  .menu-btn{display:block;font-size:1.8rem;cursor:pointer;color:#00bfff;}
+  nav{
+    position:fixed;top:65px;right:20px;background:rgba(255,255,255,0.3);
+    backdrop-filter:blur(15px);border-radius:15px;display:none;flex-direction:column;padding:15px;
+  }
+  nav a{margin:10px;color:#00bfff;text-decoration:none;font-weight:600;transition:0.3s;font-family:'Roboto',sans-serif;}
+  nav a:hover{color:#ffffff;background:#00bfff;padding:8px;border-radius:10px;}
+  @media(min-width:768px){
+    .menu-btn{display:none;}
+    nav{position:static;display:flex !important;flex-direction:row;background:transparent;padding:0;}
+    nav a{margin:0 20px;}
+  }
+
+  /* ===== SERVICES GALLERY ===== */
+  section{padding:100px 20px;text-align:center;background:rgba(255,255,255,0.1);}
+  h2{font-size:2.2rem;color:#00bfff;margin-bottom:40px;font-family:'Roboto',sans-serif;}
+
+  .gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    perspective:1200px;
+  }
+
+  .gallery-item{
+    width:100%;
+    max-width:280px;
+    height:auto;
+    background:rgba(255,255,255,0.3);
+    backdrop-filter:blur(15px);
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:transform 0.5s;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    overflow:hidden;
+  }
+
+  .gallery-item img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:12px;
+  }
+
+  .gallery-item p{
+    margin-top:10px;
+    color:#00bfff;
+    font-weight:700;
+    font-size:1.1rem;
+    text-align:center;
+    font-family:'Roboto',sans-serif;
+  }
+
+  .gallery-item:hover{transform:scale(1.05) rotateY(10deg);}
+
+  @media(min-width:768px){
+    .gallery-item{flex:1 1 calc(33% - 40px);}
+    .gallery-item img{height:180px;}
+  }
+  
+  @media(min-width:1200px){
+    .gallery-item{flex:1 1 calc(25% - 40px);}
+  }
+
+  /* ===== FOOTER ===== */
+  footer{
+    background:rgba(0,191,255,0.15);
+    color:#00bfff;text-align:center;padding:40px;
+    backdrop-filter:blur(15px);box-shadow:0 -5px 20px rgba(0,0,0,0.2);
+  }
+  footer a{color:#00bfff;margin:0 8px;text-decoration:none;}
+  foot/* ===== General Styles ===== */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Order Section ===== */
+#order {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+#order h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* ===== Form Fields ===== */
+.order-form .form-group {
+  margin-bottom: 20px;
+}
+
+.order-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+.order-form input,
+.order-form select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.order-form input:focus,
+.order-form select:focus {
+  border-color: #25D366; /* WhatsApp green accent */
+  box-shadow: 0 0 8px rgba(37, 211, 102, 0.4);
+}
+
+/* ===== Submit Button ===== */
+.order-form .submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #25D366; /* WhatsApp green */
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.order-form .submit-btn:hover {
+  background: #1ebe57;
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+/* ===== Info Paragraph ===== */
+.order-form p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* ===== Floating WhatsApp Button ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+}
+er a:hover{text-decoration:underline;}

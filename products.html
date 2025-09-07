@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dpro Printers & Stationary - Products</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome for social icons -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f4f4f9, #e6eef7);
+    }
+    header {
+        background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    }
+    .product-card {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+    }
+    .product-card:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 0 20px rgba(79, 172, 254, 0.7);
+    }
+    .product-card img {
+        height: 200px; /* fixed height for all */
+        width: 100%;
+        object-fit: cover; /* crop to fit neatly */
+        border-radius: 10px;
+    }
+    .product-name {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    footer {
+        background: linear-gradient(135deg, #0d1b2a, #1b263b); /* matches header */
+        color: #fff;
+        padding: 40px 20px;
+        margin-top: 50px;
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    .social-icons a {
+        color: #fff;
+        margin-right: 15px;
+        font-size: 1.4em;
+        transition: 0.3s;
+    }
+    .social-icons a:hover {
+        color: #00f2fe;
+    }
+    /* Form Glass Effect */
+    form .form-control {
+        background: rgba(255, 255, 255, 0.15);
+        border: none;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        color: #000;
+        transition: 0.3s;
+    }
+    form .form-control:focus {
+        background: rgba(255,255,255,0.3);
+        box-shadow: 0 0 8px #4facfe;
+    }
+    .btn-primary {
+        background: linear-gradient(145deg, #4facfe, #00f2fe);
+        border: none;
+        box-shadow: 0 0 15px rgba(79, 172, 254, 0.8);
+    }
+    .btn-primary:hover {
+        transform: translateY(-2px);
+    }
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25d366;
+        color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        z-index: 999;
+        transition: transform 0.3s;
+    }
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .product-card {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+    }
+    .product-card:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 0 20px rgba(79, 172, 254, 0.7);
+    }
+    .product-card img {
+        height: 200px; /* fixed height for all */
+        width: 100%;
+        object-fit: cover; /* crop to fit neatly */
+        border-radius: 10px;
+    }
+    .product-name {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    footer {
+        background: linear-gradient(135deg, #0d1b2a, #1b263b); /* matches header */
+        color: #fff;
+        padding: 40px 20px;
+        margin-top: 50px;
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    .social-icons a {
+        color: #fff;
+        margin-right: 15px;
+        font-size: 1.4em;
+        transition: 0.3s;
+    }
+    .social-icons a:hover {
+        color: #00f2fe;
+    }
+    /* Form Glass Effect */
+    form .form-control {
+        background: rgba(255, 255, 255, 0.15);
+        border: none;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        color: #000;
+        transition: 0.3s;
+    }
+    form .form-control:focus {
+        background: rgba(255,255,255,0.3);
+        box-shadow: 0 0 8px #4facfe;
+    }
+    .btn-primary {
+        background: linear-gradient(145deg, #4facfe, #00f2fe);
+        border: none;
+        box-shadow: 0 0 15px rgba(79, 172, 254, 0.8);
+    }
+    .btn-primary:hover {
+        transform: translateY(-2px);
+    }
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25d366;
+        color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        z-index: 999;
+        transition: transform 0.3s;
+    }
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
+
+
+</style>
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="text-center py-5 bg-dark text-white rounded-bottom">
+    <h1>Dpro Printers & Stationary</h1>
+    <p>Quality Stationery for All Your Needs</p>
+</header>
+
+<!-- Product Gallery -->
+ <section class="row">
+    <div class="col-lg-12 bg-dark"></div>
+ </section>
+<!-- Product Gallery -->
+<section class="container py-5">
+    <h2 class="mb-4 text-center row" style="">Our Products</h2>
+    <div class="row g-4">
+        <!-- Product Card Template -->
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="cal.jpg" class="img-fluid rounded" alt="Calculator">
+                <div class="product-name">Calculators</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="1bea3794df9df31a792d6536d9003f0c.jpg" class="img-fluid rounded" alt="Set">
+                <div class="product-name">Rulers</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="26e39701b7d288c24c21afa603666a98.jpg" class="img-fluid rounded" alt="Reams">
+                <div class="product-name">Stemple Machine</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="0196bfad000c5d4ef6f0354f7d266ddd.jpg" class="img-fluid rounded" alt="Books">
+                <div class="product-name">Books</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+
+        <!-- Add remaining products similarly -->
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images (7).jpeg" class="img-fluid rounded" alt="Pens">
+                <div class="product-name">Chalk</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="sci.jpg" class="img-fluid rounded" alt="">
+                <div class="product-name">Scissors</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="set (1).jpg" class="img-fluid rounded" alt="">
+                <div class="product-name">Sets</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="829f9ddcaef34c153a2153850b50163f.jpg" class="img-fluid rounded" alt="">
+                <div class="product-name">Pens</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+          <div class="col-md-3">
+            <div class="product-card">
+                <img src="b42ce00b2f1396d8d21d6aebd1ebae82.jpg" class="img-fluid rounded" alt="">
+                <div class="product-name">Calendar</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="b5282b922f3b6ab93bb9ca7b5eb14ab8.jpg" class="img-fluid rounded" alt="">
+                <div class="product-name">Pencils</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="download.jpeg" class="img-fluid rounded" alt="" width="100%">
+                <div class="product-name">Atlas</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+          <div class="col-md-3">
+            <div class="product-card">
+                <img src="download (1).jpeg" class="img-fluid rounded" alt="" width="100%">
+                <div class="product-name">Dictionary</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="download.webp" class="img-fluid rounded" alt="" width="100%">
+                <div class="product-name">Box Files</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="fdf6c57ae751f2b5b445fdcc93716e4f.jpg" class="img-fluid rounded" alt="">
+                <div class="product-name">Markers</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+          <div class="col-md-3">
+            <div class="product-card">
+                <img src="images (5).jpeg" class="img-fluid rounded" alt="">
+                <div class="product-name"> Glue</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images (6).jpeg" class="img-fluid rounded" alt="">
+                <div class="product-name">Sharpeners</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images (8).jpeg" class="img-fluid rounded" alt="">
+                <div class="product-name">Soul Tape</div>
+                <div class="product-price"></div>
+            </div>
+        </div>
+
+        <!-- Continue adding images for all products using the same format -->
+    </div>
+</section>
+<!-- Booking Form -->
+<section class="container py-5">
+    <h2 class="mb-4 text-center">Order Your Items</h2>
+    <form>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="col-12">
+                <label for="item" class="form-label">Item(s) to Order</label>
+                <textarea class="form-control" id="item" rows="3" placeholder="List the items you want to order"></textarea>
+            </div>
+            <div class="col-12">
+                <label for="upload" class="form-label">Upload Reference (optional)</label>
+                <input class="form-control" type="file" id="upload">
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label">Additional Details</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Any special instructions"></textarea>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg mt-3">Submit Order</button>
+            </div>
+        </div>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="text-center rounded-top">
+    <div class="container">
+        <p><strong>Working Hours:</strong> Monday - Friday | 8:00 AM - 6:00 PM</p>
+        <p><strong>Contact:</strong> +256 700 531 200 | info@dprostationary.com</p>
+        <div class="social-icons mb-3">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 Dpro Printers & Stationary. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+ <script src="js/bootstrap.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
